@@ -17,7 +17,7 @@ const CLIENT = CLIENT_Express()
 
 const CLIENT_PORT = 5200
 
-const staticDist = "../client/dist/pokemon5e-toolkit";
+const staticDist = "./dist/savvy-cats-smart-pump";
 
 CLIENT.use(CLIENT_Express.static(staticDist));
 
