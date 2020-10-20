@@ -1,27 +1,35 @@
-# SavvyCatsSMARTPump
+# Running the Code Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+## Starting the servers
 
-## Development server
+`npm run start` - to start the client and the server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Simple Developer Exercise 
 
-## Code scaffolding
+The savvy cats over at SMART Pump would like to be able to allow users to login to their account, check their balance and update their personal details. Write a simple web application (API and UI) using node.js and lowdb that lets users accomplish those tasks. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Feel free to use any other libraries or tool chains as long as the core code is javascript and node.js. npm (https://www.npmjs.org) is your friend - no need to recreate the wheel. 
 
-## Build
+You will find the base data file in `/data`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Wireframes: `assets/wireframes.png`
 
-## Running unit tests
+## Time limits
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+This exercise is meant showcase your creativity and talent in problem solving against a real world scenario. To that end it should not consume your every waking moment. We recommend at max spending 3 evenings of time on the exercise. 
 
-## Running end-to-end tests
+## Requirements
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+* Login to the app via email and password
+* Restrict access to valid a User
+* Once logged in show the details of the user on the page
+* Authorized users can check their account balance
+* Allow the user to change their details
+* lowdb (DB) -> https://github.com/typicode/lowdb
+* node.js -> http://nodejs.org/ 
 
-## Further help
+## Bonus Points
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Fully responsive UI
+* Unit Tests of the API
+* Functional Tests of the UI
