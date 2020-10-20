@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  width: 99.75vw;
+  height: 99.5vh;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: whitesmoke;
+  overflow-y: auto;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; }
