@@ -34,5 +34,6 @@ export class MainbarComponent implements OnInit {
   }
 
   logOut() {
+    this.userService.logUserOut()
   }
 }

@@ -3,6 +3,7 @@ const bodyParser = require('body-parser')
 
 const app = express()
 const router = express.Router()
+router.use(bodyParser.json())
 const db = require('./database')
 
 router.get('/login/:id/:pw', async (req, res) => {
@@ -21,6 +22,10 @@ router.get('/:id', async (req, res) => {
     } catch (err) {
         res.status(500).send({Error: err})
     }
+})
+
+router.post('/update/:id', async (req, res) => {
+
 })
 
 module.exports = router

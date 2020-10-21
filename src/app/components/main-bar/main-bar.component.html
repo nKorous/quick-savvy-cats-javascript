@@ -1,1 +1,3 @@
-<mat-toolbar color='primary'></mat-toolbar>
+<mat-toolbar color='primary' *ngIf='userIsLoggedIn'>
+    <button mat-raised-button color='primary' (click)='logOut()'><mat-icon>time_to_leave</mat-icon> Logout</button>
+</mat-toolbar>

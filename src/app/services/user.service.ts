@@ -26,6 +26,7 @@ export class UserService {
       if(user && user.isActive){
         this.popup.success(`Logged In ${email}`)
         this.userIsLoggedIn.next(true)
+        this.loggedInUser.next(user)
         this.router.navigate(['/home'])
       } else if (user && !user.isActive) {
         this.popup.error(`${email} is not active, please contact your account manager`, 10000)
