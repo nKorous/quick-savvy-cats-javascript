@@ -3,8 +3,8 @@
 ## Instructions for running
 1. `npm install` - install packages
 1. `ng build --prod` - get a prod build into the `dist` folder
-1. `npm run start` - starts the backend server and frontend server
-   + if you want to run them in DEV mode you can run `npm run startDev` and it will run them with `nodemon` instead of just `node` so there is hotreloading on the server side
+1. `npm run startDev` - starts the backend server and frontend server
+   + this starts things with nodemon so that the database will keep up with changes
 1. navigate to [http://localhost:5200/](http://localhost:5200/) to see the app
 
 ## Disclaimers

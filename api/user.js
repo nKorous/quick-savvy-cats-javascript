@@ -16,11 +16,11 @@ router.get('/login/:id/:pw', async (req, res) => {
 
 router.post('/update/:id', async (req, res) => {
     let body = req.body
-    console.log(body)
 
     let updatedRecord = db.get('users').find({ guid: body.guid }).assign(body).write()
-    console.log(updatedRecord)
-    res.send(updatedRecord)
+    let record = db.get('users').find({ guid: body.guid })
+    if(record) res.status(200).send(record)
+    else res.status(500).send({ERR: 'Server Error'})
 })
 
 module.exports = router

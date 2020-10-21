@@ -40,7 +40,10 @@ export class UserService {
 
   updateUserInfo(userInfo: User) {
     this.http.post<any>(BASE_URL + `/api/user/update/${userInfo.guid}`, userInfo)
-    .subscribe(user => console.log('updateUserInfo', user))
+    // because of the way the json database is working there isn't a response sent
+    // i would usually update the user info from the response but i'm doing it here
+
+    this.loggedInUser.next(userInfo)
   }
 
   logUserOut() {
