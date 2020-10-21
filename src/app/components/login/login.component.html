@@ -2,8 +2,13 @@
     <mat-card class='loginCard'>
         <img src='assets/logo.png' class='logo'>
         <mat-card-content>
-            <p><mat-label>Username: </mat-label><input matInput type='text'></p>
-            <p><mat-label>Password: </mat-label><input matInput type='password'></p>
+            <p><mat-label>Username: </mat-label><input #usernameInput matInput type='text'></p>
+            <p><mat-label>Password: </mat-label><input #passwordInput matInput type='password'></p>
         </mat-card-content>
+        <mat-card-footer>
+            <mat-card-actions>
+                <button mat-rasied-button color='primary' [disabled]='!usernameInput.value || !passwordInput.value' (click)='login(usernameInput.value, passwordInput.value)'><mat-icon>login</mat-icon> Log In</button>
+            </mat-card-actions>
+        </mat-card-footer>
     </mat-card>
 </div>

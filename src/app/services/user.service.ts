@@ -15,7 +15,8 @@ export class UserService {
   constructor(private router: Router) { }
 
   logUserIn(userName: string, password: string) {
-
+    this.userIsLoggedIn.next(true)
+    this.router.navigate(['/home'])
   }
 
   logUserOut() {

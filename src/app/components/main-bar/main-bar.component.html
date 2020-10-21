@@ -1,14 +1,1 @@
-<mat-toolbar *ngIf='userIsLoggedIn' color='primary' >
-    <button *ngIf='userIsLoggedIn' mat-icon-button mat-raised-button color='primary' [matMenuTriggerFor]='menu'><mat-icon>menu</mat-icon></button>
-
-    <span style='flex: 1 1'></span>
-    <!-- Everything over here is to the right of the bar-->
-    <button style='margin-right: 5px;' mat-icon-button mat-raised-button ><img style='height: 25px; width: 25px;' [src]='loggedInUser.picture'></button>
-    <span>Welcome, {{ loggedInUser.email }}</span>
-
-<mat-menu #menu='matMenu' >  
-    
-    <!-- always at the bottom of the list-->
-    <a mat-menu-item (click)='logOut()'><mat-icon>time_to_leave</mat-icon>Logout</a>
-</mat-menu>
-</mat-toolbar>
+<mat-toolbar color='primary'></mat-toolbar>
