@@ -39,13 +39,8 @@ export class UserService {
   }
 
   updateUserInfo(userInfo: User) {
-    return this.http.post<any>(BASE_URL + `/api/user/update/${userInfo.guid}`, userInfo)
-      .pipe(map(user => {
-        console.log('updateUserInfo user', user)
-        user.map(u => {
-          console.log('updateUserInfo, u', u)
-        })
-      })).subscribe(() => {})
+    this.http.post<any>(BASE_URL + `/api/user/update/${userInfo.guid}`, userInfo)
+    .subscribe(user => console.log('updateUserInfo', user))
   }
 
   logUserOut() {

@@ -250,14 +250,14 @@
       "guid": "8f40324c-75ef-49a1-9c49-be2d68f50j76",
       "isActive": true,
       "balance": 3000,
-      "picture": "https://vignette.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest/scale-to-width-down/180?cb=20140520015336",
-      "age": 39,
+      "picture": "https://cdn.bulbagarden.net/upload/b/b8/025Pikachu_LG.png",
+      "age": "42",
       "eyeColor": "purple",
       "name": {
         "first": "TEST",
         "last": "McTesterson"
       },
-      "company": "TESTCOM",
+      "company": "Deathstar Inc",
       "email": "test.tester@testnet.net",
       "password": "test123",
       "phone": "+1 (936) 451-3590",

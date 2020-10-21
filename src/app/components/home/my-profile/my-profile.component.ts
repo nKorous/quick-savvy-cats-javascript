@@ -47,7 +47,8 @@ export class MyProfileComponent implements OnInit {
     this.editCompany = !this.editCompany
   }
 
-  setCompanyName() {
+  setCompanyName(company: string) {
+    this.newCompany = company
   }
 
   editPictureToggle() {
@@ -86,6 +87,10 @@ export class MyProfileComponent implements OnInit {
     this.editPhone = !this.editPhone
   }
 
+  setPhone(tel: string) {
+    this.newPhone = tel
+  }
+
   editAddressToggle() {
     this.editAddress = !this.editAddress
   }
@@ -95,6 +100,29 @@ export class MyProfileComponent implements OnInit {
   }
 
   save(){
+    this.editPictureURL = false
+    this.editAge = false;
+    this.editEyeColor = false;
+    this.editName = false;
+    this.editCompany = false;
+    this.editEmail = false;
+    this.editPhone = false;
+    this.editAddress = false;
+
+    this.loggedInUser = {
+      ...this.loggedInUser,
+      company: this.newCompany || this.loggedInUser.company,
+      email: this.newEmail || this.loggedInUser.email,
+      phone: this.newPhone || this.loggedInUser.phone,
+      address: this.newAddress || this.loggedInUser.address,      
+      age: this.newAge || this.loggedInUser.age,
+      eyeColor: this.newEyeColor || this.loggedInUser.eyeColor,
+      picture: this.newPictureURL || this.loggedInUser.picture
+    }
+
+    this.userService.updateUserInfo(this.loggedInUser)
+
     this.popup.success(`Saved Profile Settings`)
   }
 }
+
