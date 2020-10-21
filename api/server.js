@@ -2,7 +2,6 @@
 const API = require('express')()
 const cors = require('cors')
 
-const auth = require('./auth')
 const user = require('./user')
 
 const API_PORT = process.env.PORT || 8888
@@ -10,7 +9,6 @@ const API_PORT = process.env.PORT || 8888
 API.listen(API_PORT, () => console.log(`API Listening on ${API_PORT}`))
 
 API.use(cors())
-API.use('/api/auth', auth)
 API.use('/api/user', user)
 
 /*** Serving the Client */

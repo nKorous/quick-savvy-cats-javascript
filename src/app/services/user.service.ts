@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
+import { PopupService } from '../services/popup.service'
 
 import { User } from '../interfaces/user'
 
@@ -15,16 +16,22 @@ export class UserService {
   loggedInUser: BehaviorSubject<User> = new BehaviorSubject(null);
 
   constructor(private router: Router,
-    private http: HttpClient) { }
+    private http: HttpClient,
+    private popup: PopupService) { }
 
   logUserIn(email: string, password: string) {
-    this.http.get<any>(BASE_URL + `/api/user/${email}`).subscribe(user => {
-      if(user){
-        console.log('Logged in', user)
+    let e = encodeURI(email)
+    let p = encodeURI(password)
+    this.http.get<User>(BASE_URL + `/api/user/login/${e}/${p}`).subscribe(user => {
+      if(user && user.isActive){
+        this.popup.success(`Logged In ${email}`)
         this.userIsLoggedIn.next(true)
         this.router.navigate(['/home'])
-      } else {
-
+      } else if (user && !user.isActive) {
+        this.popup.error(`${email} is not active, please contact your account manager`, 10000)
+      }
+      else {
+        this.popup.error('Error with username or password')
       }
     })
   }
@@ -34,8 +41,4 @@ export class UserService {
     this.loggedInUser.next(null)
     this.router.navigate(['/'])
   }
-
-  
-
-
 }

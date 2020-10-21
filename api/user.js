@@ -5,15 +5,21 @@ const app = express()
 const router = express.Router()
 const db = require('./database')
 
+router.get('/login/:id/:pw', async (req, res) => {
+    const id = decodeURI(req.params.id)
+    const pw = decodeURI(req.params.pw)
+
+    let findUser = db.get('users').find({email: id, password: pw})
+    res.send(findUser)
+})
+
 router.get('/:id', async (req, res) => {
-    const id = req.params.id
-    let dID = decodeURI(id)
-    console.log({id, dID})
+    const id = decodeURI(req.params.id)
     try {
-        let returnUser = db.get('users').find({ email: dID})
+        let returnUser = db.get('users').find({ email: id})
         res.status(200).send(returnUser)
     } catch (err) {
-        res.status(500).send('Error: ', err)
+        res.status(500).send({Error: err})
     }
 })
 
