@@ -10,6 +10,25 @@ import { UserService } from 'src/app/services/user.service';
 export class MyPofileComponent implements OnInit {
   loggedInUser: User;
 
+  editPictureURL: boolean = false
+  editAge: boolean = false;
+  editEyeColor: boolean = false;
+  editName: boolean = false;
+  editCompany: boolean = false;
+  editEmail: boolean = false;
+  editPhone: boolean = false;
+  editAddress: boolean = false;
+
+  newName: {first: string, last: string}
+
+  newPictureURL: string;
+  newAge: number;
+  newEyeColor: string;
+  newCompany: string;
+  newEmail: string;
+  newPhone: string;
+  newAddress: string
+
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
