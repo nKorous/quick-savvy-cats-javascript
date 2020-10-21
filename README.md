@@ -1,8 +1,21 @@
 # Running the Code Challenge
 
-## Starting the servers
+## Instructions for running
+1. `npm install` - install packages
+1. `ng build --prod` - get a prod build into the `dist` folder
+1. `npm run start` - starts the backend server and frontend server
+   + if you want to run them in DEV mode you can run `npm run startDev` and it will run them with `nodemon` instead of just `node` so there is hotreloading on the server side
+1. navigate to [http://localhost:5200/](http://localhost:5200/) to see the app
 
-`npm run start` - to start the client and the server
+## Disclaimers
+
+I don't advocate for sending usernames/passwords in clear text in the URL AT ALL. I did it in this project to save on time and implementation.. Usually I would use some sort of token system or cookie system with a jwt and then authenticate using that and pass that back and forth using middleware on the back end to check it with each api call (cant trust anything the front end sends).
+
+## Things I learned
+
+1. lowdb is pretty awesome, I've heard of json databases before but I have never used one before. I'll be using this on other projects to quickly prototype database stuff for sure
+1. When I first sat down with paper to figure out how I wanted to tackle this project I quickly realized that I let my imagionation run away and needed to scale it back because of one word in the title of the exercise. Simple.. I guess sometimes I get carried away on what could be instead of what the requirements are, even on a quick project
+1. I have a "style". I wrote this app in a VERY similar style to several other apps I've written in the last couple months in my own time. I found myself going back to code I had recently written to look things up. While it's good to have a style and something to go back on, I realized that maybe I need to branch out a little bit and put a little more "hot sauce" in my arsenal and spice things up a bit. 
 
 # Simple Developer Exercise 
 
