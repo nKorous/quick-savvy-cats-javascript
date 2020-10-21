@@ -9,9 +9,4 @@ router.get('/login/:id', async (req, res) => {
 })
 
 
-
-
-
-
-
 module.exports = router
