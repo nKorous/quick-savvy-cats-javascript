@@ -38,7 +38,14 @@ export class MyPofileComponent implements OnInit {
   getLoggedInUser() {
     this.userService.loggedInUser.subscribe((user) => {
       this.loggedInUser = user;
-      console.log('home, logged in user', this.loggedInUser);
     });
+  }
+
+  companyEditToggle() {
+    this.editCompany = !this.editCompany
+  }
+
+  editCompanyName(newName: string) {
+    this.newCompany = newName
   }
 }

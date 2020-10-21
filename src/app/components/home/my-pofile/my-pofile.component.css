@@ -1,0 +1,28 @@
+.profileMain {
+    display: flex;
+    justify-content: center;
+}
+
+.profileCard {
+    margin-top: 2%;
+}
+
+.profileTable {
+    width: 100%;
+}
+
+table thead tr th {
+    border-bottom: 2px double black;
+}
+
+table tbody tr td {
+    border-bottom: 1px dotted lightslategray;
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+
+.valueName {
+    font-weight: bold;
+}
