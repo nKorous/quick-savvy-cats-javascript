@@ -14,4 +14,8 @@ export class BalanceDialogComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  close() {
+    this.dialogRef.close()
+  }
+
 }

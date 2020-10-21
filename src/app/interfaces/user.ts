@@ -2,7 +2,7 @@ export interface User {
     _id: string
     guid: string;
     isActive: boolean;
-    balance: string;
+    balance: number;
     picture: string;
     age: number;
     eyeColor: string;
@@ -11,5 +11,20 @@ export interface User {
     email: string,
     password: string,
     phone: string,
-    address: string
+    address: string,
+    transactions: Array<Transactions>,
+    logins: Array<Login>
+}
+
+export interface Transactions {
+    transactionId: string;
+    transactionName: string;
+    transactionAmount: number;
+    transactionDate: Date;
+    transactionType: 'CREDIT' | 'EXPENSE'
+}
+
+export interface Login {
+    loginId: string;
+    timeStamp: Date;
 }

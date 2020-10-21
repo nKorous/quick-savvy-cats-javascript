@@ -6,8 +6,8 @@
 }
 
 .loginCard {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 60%;
     margin-top: 75px;
     text-align: center;
     align-items: center;
@@ -17,4 +17,8 @@
 .logo {
     max-height: 50%;
     margin-bottom: 5px;
+}
+
+#loginButton {
+    width: 200px;
 }
