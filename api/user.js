@@ -15,7 +15,12 @@ router.get('/login/:id/:pw', async (req, res) => {
 })
 
 router.post('/update/:id', async (req, res) => {
+    let body = req.body
+    console.log(body)
 
+    let updatedRecord = db.get('users').find({ guid: body.guid }).assign(body).write()
+    console.log(updatedRecord)
+    res.send(updatedRecord)
 })
 
 module.exports = router

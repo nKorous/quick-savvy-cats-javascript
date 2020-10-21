@@ -1,6 +1,5 @@
 {
-  "users": 
-  [
+  "users": [
     {
       "_id": "5410953eb0e0c0ae25608277",
       "guid": "eab0324c-75ef-49a1-9c49-be2d68f50b96",
@@ -19,7 +18,7 @@
       "phone": "+1 (936) 451-3590",
       "address": "121 National Drive, Cotopaxi, Michigan, 8240",
       "transactions": [
-                {
+        {
           "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",
           "transactionName": "Bills Thunderdome",
           "transactionAmount": 724.86,
@@ -68,7 +67,7 @@
       "phone": "+1 (814) 437-3837",
       "address": "261 Willow Street, Whipholt, Louisiana, 2879",
       "transactions": [
-                {
+        {
           "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",
           "transactionName": "Bills Thunderdome",
           "transactionAmount": 724.86,
@@ -103,7 +102,7 @@
       "_id": "5410953ea3e25180277b2a40",
       "guid": "d5464d51-b4bf-4a4b-a5f7-fc2c8933ab45",
       "isActive": true,
-      "balance": 1668.20,
+      "balance": 1668.2,
       "picture": "http://placehold.it/32x32",
       "age": 33,
       "eyeColor": "green",
@@ -117,7 +116,7 @@
       "phone": "+1 (983) 565-2711",
       "address": "743 Ryder Avenue, Marenisco, South Dakota, 4752",
       "transactions": [
-                {
+        {
           "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",
           "transactionName": "Bills Thunderdome",
           "transactionAmount": 724.86,
@@ -166,7 +165,7 @@
       "phone": "+1 (971) 473-2320",
       "address": "110 Roosevelt Place, Salunga, South Carolina, 9434",
       "transactions": [
-                {
+        {
           "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",
           "transactionName": "Bills Thunderdome",
           "transactionAmount": 724.86,
@@ -201,7 +200,7 @@
       "_id": "5410953e099f716e02f32e05",
       "guid": "584de54b-fa74-480d-90a4-b1b38cd02685",
       "isActive": true,
-      "balance": 1778.30,
+      "balance": 1778.3,
       "picture": "http://placehold.it/32x32",
       "age": 23,
       "eyeColor": "green",
@@ -215,7 +214,7 @@
       "phone": "+1 (800) 433-3997",
       "address": "622 Fanchon Place, Kohatk, Marshall Islands, 8665",
       "transactions": [
-                {
+        {
           "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",
           "transactionName": "Bills Thunderdome",
           "transactionAmount": 724.86,
@@ -250,15 +249,15 @@
       "_id": "5410953eb0e0c0ae25608875",
       "guid": "8f40324c-75ef-49a1-9c49-be2d68f50j76",
       "isActive": true,
-      "balance": 4965.73,
-      "picture": "http://placehold.it/32x32",
+      "balance": 3000,
+      "picture": "https://vignette.wikia.nocookie.net/pokemon-fano/images/6/6f/Poke_Ball.png/revision/latest/scale-to-width-down/180?cb=20140520015336",
       "age": 39,
-      "eyeColor": "orange",
+      "eyeColor": "purple",
       "name": {
         "first": "TEST",
-        "last": "TSET"
+        "last": "McTesterson"
       },
-      "company": "TESTNET",
+      "company": "TESTCOM",
       "email": "test.tester@testnet.net",
       "password": "test123",
       "phone": "+1 (936) 451-3590",

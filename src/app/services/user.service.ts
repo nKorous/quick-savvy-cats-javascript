@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { PopupService } from '../services/popup.service'
+import { map } from 'rxjs/operators';
 
 import { User } from '../interfaces/user'
 
@@ -35,6 +36,16 @@ export class UserService {
         this.popup.error('Error with username or password')
       }
     })
+  }
+
+  updateUserInfo(userInfo: User) {
+    return this.http.post<any>(BASE_URL + `/api/user/update/${userInfo.guid}`, userInfo)
+      .pipe(map(user => {
+        console.log('updateUserInfo user', user)
+        user.map(u => {
+          console.log('updateUserInfo, u', u)
+        })
+      })).subscribe(() => {})
   }
 
   logUserOut() {

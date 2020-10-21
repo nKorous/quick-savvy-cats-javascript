@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
-import { EditUserComponent } from './components/edit-user/edit-user.component';
 import { MainbarComponent } from './components/main-bar/main-bar.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -19,16 +18,17 @@ import { MatDividerModule } from '@angular/material/divider'
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatDialogModule } from '@angular/material/dialog';
-import { BalanceDialogComponent } from './components/home/balance-dialog/balance-dialog.component'
+import { BalanceDialogComponent } from './components/home/balance-dialog/balance-dialog.component';
+import { MyPofileComponent } from './components/home/my-pofile/my-pofile.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
-    EditUserComponent,
     MainbarComponent,
-    BalanceDialogComponent
+    BalanceDialogComponent,
+    MyPofileComponent
   ],
   imports: [
     BrowserModule,

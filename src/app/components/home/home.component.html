@@ -4,9 +4,9 @@
         <h2>Welcome {{ loggedInUser?.name.last }}, {{ loggedInUser?.name.first }}</h2>
     </div>
     <div class='actionTray'>
-        <button class='appButton' id='balanceButton' mat-raised-button (click)='openBalance()'>Balance</button>
-        <button class='appButton' id='payButton' mat-raised-button color='primary'>Pay</button>
-        <button class='appButton' id='profileButton' mat-raised-button color='warn'>Edit Profile</button>
+        <button class='appButton' id='balanceButton' mat-raised-button (click)='openBalance()'><mat-icon>account_balance</mat-icon>  Balance</button>
+        <button class='appButton' id='payButton' mat-raised-button color='primary'><mat-icon>payment</mat-icon>  Pay</button>
+        <button class='appButton' id='profileButton' mat-raised-button color='warn' (click)='navProfile()'><mat-icon>portrait</mat-icon>  My Profile</button>
     </div>
     <mat-divider></mat-divider>
     <h2>Transactions</h2>

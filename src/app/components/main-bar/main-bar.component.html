@@ -1,5 +1,6 @@
 <mat-toolbar color='primary' *ngIf='userIsLoggedIn'>
-    <button mat-raised-button color='primary' (click)='logOut()'><mat-icon>time_to_leave</mat-icon> Logout</button>
+    <button mat-raised-button mat-icon-button color='primary' routerLink='/home' routerLinkActive='true'><mat-icon>home</mat-icon></button>
+    <button mat-raised-button color='primary' (click)='logOut()' style='margin-left: 10px;'><mat-icon>time_to_leave</mat-icon> Logout</button>
     
     <!-- right side of the bar -->
     <span style='flex: 1 1'></span>
