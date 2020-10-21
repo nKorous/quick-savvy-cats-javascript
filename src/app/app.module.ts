@@ -19,7 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
 import { MatDialogModule } from '@angular/material/dialog';
 import { BalanceDialogComponent } from './components/home/balance-dialog/balance-dialog.component';
-import { MyPofileComponent } from './components/home/my-pofile/my-pofile.component'
+import { MyProfileComponent } from './components/home/my-profile/my-profile.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +28,7 @@ import { MyPofileComponent } from './components/home/my-pofile/my-pofile.compone
     HomeComponent,
     MainbarComponent,
     BalanceDialogComponent,
-    MyPofileComponent
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,

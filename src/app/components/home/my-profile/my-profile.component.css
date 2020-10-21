@@ -20,9 +20,17 @@ table tbody tr td {
     max-width: 500px;
     overflow: hidden;
     text-overflow: ellipsis;
-    
+}
+
+.longInput {
+    width: 80%;
 }
 
 .valueName {
     font-weight: bold;
+}
+
+.saveButton {
+    background-color: green;
+    color: white;
 }
