@@ -1,0 +1,19 @@
+.loginMain {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.loginCard {
+    height: 40%;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    max-height: 50%;
+}

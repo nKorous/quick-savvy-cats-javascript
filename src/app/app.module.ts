@@ -7,7 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './components/login/login.component';
 import { HomeComponent } from './components/home/home.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
-import { MainBarComponent } from './components/main-bar/main-bar.component';
+import { MainbarComponent } from './components/main-bar/main-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input'
+import { MatIconModule } from '@angular/material/icon'
 
 @NgModule({
   declarations: [
@@ -15,12 +21,18 @@ import { MainBarComponent } from './components/main-bar/main-bar.component';
     LoginComponent,
     HomeComponent,
     EditUserComponent,
-    MainBarComponent
+    MainbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatCardModule,
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

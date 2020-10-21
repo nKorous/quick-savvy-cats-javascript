@@ -12,8 +12,7 @@ export class UserService {
   userIsLoggedIn: BehaviorSubject<boolean> = new BehaviorSubject(false)
   loggedInUser: BehaviorSubject<User> = new BehaviorSubject(null);
 
-  constructor(private popup: PopupService,
-    private router: Router) { }
+  constructor(private router: Router) { }
 
   logUserIn(userName: string, password: string) {
 
@@ -24,6 +23,8 @@ export class UserService {
     this.loggedInUser.next(null)
     this.router.navigate(['/'])
   }
+
+  
 
 
 }
