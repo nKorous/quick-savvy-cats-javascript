@@ -118,7 +118,36 @@
       "password": "test123",
       "phone": "+1 (936) 451-3590",
       "address": "121 National Drive, Cotopaxi, Michigan, 8240",
-      "transactions": [],
+      "transactions": [
+        {
+          "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",
+          "transactionName": "Bills Thunderdome",
+          "transactionAmount": 724.86,
+          "transactionDate": "2020/04/18",
+          "transactionType": "EXPENSE"
+        },
+        {
+          "transactionId": "F70A193D-6AC2-4ADC-ADC5-5C9289167EAB",
+          "transactionName": "J. Muphey RE: ACCT: 11223",
+          "transactionAmount": 682.47,
+          "transactionDate": "2020/08/12",
+          "transactionType": "CREDIT"
+        },
+        {
+          "transactionId": "694ECB4C-7D36-4633-A7C5-703756656393",
+          "transactionName": "Dupree Trucking ACCT: 90210",
+          "transactionAmount": 1268.01,
+          "transactionDate": "2020/08/14",
+          "transactionType": "CREDIT"
+        },
+        {
+          "transactionId": "8B505FEE-EA9B-461C-832F-CEA0B3C650A4",
+          "transactionName": "Accent Inc ACCT: 541977",
+          "transactionAmount": 3378.12,
+          "transactionDate": "2020/09/30",
+          "transactionType": "CREDIT"
+        }
+      ],
       "logins": []
     }
   ]
