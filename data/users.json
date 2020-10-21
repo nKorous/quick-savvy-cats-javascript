@@ -251,17 +251,17 @@
       "isActive": true,
       "balance": 3000,
       "picture": "https://cdn.bulbagarden.net/upload/b/b8/025Pikachu_LG.png",
-      "age": "42",
-      "eyeColor": "purple",
+      "age": "22",
+      "eyeColor": "Blue",
       "name": {
-        "first": "TEST",
-        "last": "McTesterson"
+        "first": "ash",
+        "last": "ketchovic"
       },
-      "company": "Deathstar Inc",
-      "email": "test.tester@testnet.net",
+      "company": "My Happy Company",
+      "email": "newTest@test.org",
       "password": "test123",
-      "phone": "+1 325 678 1122",
-      "address": "121 National Drive, Cotopaxi, Michigan, 82409",
+      "phone": "1 222 333 4444",
+      "address": "123 4th ST Quahog RI 98765",
       "transactions": [
         {
           "transactionId": "FB11707F-18BE-4D50-B4D4-5BF6F4AF2BBF",

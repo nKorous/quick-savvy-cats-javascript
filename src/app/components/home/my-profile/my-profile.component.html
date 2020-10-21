@@ -47,7 +47,7 @@
                         <tr>
                             <td class='valueName'>Address:</td>
                             <td colspan='2' *ngIf='!editAddress'>{{ newAddress ? newAddress : loggedInUser?.address }}</td>
-                            <td colspan='2' *ngIf='editAddress'><input #addressInput (keyup)='set(Input.value)' class='longInput' matInput type='text' placeholder='123 4th street'></td>
+                            <td colspan='2' *ngIf='editAddress'><input #addressInput (keyup)='setAddress(addressInput.value)' class='longInput' matInput type='text' placeholder='123 4th street'></td>
                             <td><button class='editButton' mat-icon-button (click)='editAddressToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>

@@ -113,7 +113,7 @@ export class MyProfileComponent implements OnInit {
     this.editAddress = !this.editAddress
   }
 
-  setAddressToggle(address: string) {
+  setAddress(address: string) {
     this.newAddress = address
   }
 
@@ -126,8 +126,10 @@ export class MyProfileComponent implements OnInit {
     this.editEmail = false;
     this.editPhone = false;
     this.editAddress = false;
+    this.editFirstName = false;
+    this.editLastName = false;
 
-    this.loggedInUser = {
+    const newInfo = {
       ...this.loggedInUser,
       name: { 
         first: this.newFirst || this.loggedInUser.name.first,
@@ -142,7 +144,7 @@ export class MyProfileComponent implements OnInit {
       picture: this.newPictureURL || this.loggedInUser.picture
     }
 
-    this.userService.updateUserInfo(this.loggedInUser)
+    this.userService.updateUserInfo(newInfo)
 
     this.popup.success(`Saved Profile Settings`)
   }

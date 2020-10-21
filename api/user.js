@@ -17,7 +17,7 @@ router.get('/login/:id/:pw', async (req, res) => {
 router.post('/update/:id', async (req, res) => {
     let body = req.body
 
-    db.get('users').find({ guid: body.guid }).assign(body).write() // the .write() and running with nodemon causes the service to restart and stops execution from going on
+    let update = db.get('users').find({ guid: body.guid }).assign(body).write() // the .write() and running with nodemon causes the service to restart and stops execution from going on
     let record = db.get('users').find({ guid: body.guid })
     if(record) res.status(200).send(record)
     else res.status(500).send({ERR: 'Server Error'})
