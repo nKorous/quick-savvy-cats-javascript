@@ -8,36 +8,43 @@ import { BalanceDialogComponent } from './balance-dialog/balance-dialog.componen
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  loggedInUser: User
+  loggedInUser: User;
 
-  constructor(private userService: UserService,
+  constructor(
+    private userService: UserService,
     public balanceDialog: MatDialog,
-    private router: Router) { }
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    this.getLoggedInUser()
+    this.getLoggedInUser();
   }
 
   getLoggedInUser() {
-    this.userService.loggedInUser.subscribe(user => 
-      {
-        this.loggedInUser = user
-      })
+    this.userService.loggedInUser.subscribe((user) => {
+      this.loggedInUser = user;
+      this.loggedInUser.transactions.sort((a, b) => {
+        return a.transactionDate > b.transactionDate
+          ? -1
+          : b.transactionDate > a.transactionDate
+          ? 1
+          : 0;
+      });
+    });
   }
 
   openBalance() {
     this.balanceDialog.open(BalanceDialogComponent, {
       width: '50%',
       height: '25%',
-      data: { balance: this.loggedInUser.balance }
-    })
+      data: { balance: this.loggedInUser.balance },
+    });
   }
 
-  navProfile(){
-    this.router.navigate([`/profile`, { from: 'home'} ])
+  navProfile() {
+    this.router.navigate([`/profile`, { from: 'home' }]);
   }
-
 }

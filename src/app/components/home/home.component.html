@@ -8,15 +8,17 @@
         <button class='appButton' id='profileButton' mat-raised-button color='warn' (click)='navProfile()'><mat-icon>portrait</mat-icon>  My Profile</button>
     </div>
     <mat-divider></mat-divider>
-    <h2>Transactions</h2>
+    <h2 style='text-align: center;'>Transactions</h2>
     <div class='transactions'>
     <mat-card *ngFor='let t of loggedInUser.transactions' class='transactionCard'>
         <mat-card-header>
             <mat-card-title [ngClass]="{'expense': t.transactionType === 'EXPENSE', 'credit': t.transactionType === 'CREDIT'}">
                 {{ t.transactionType }} - {{ t.transactionAmount | currency: 'USD' }}
             </mat-card-title>
-            <mat-card-subtitle>{{ t.transactionDate }} - {{ t.transactionName }}</mat-card-subtitle>
         </mat-card-header>
+        <mat-card-content>
+            <p class='transactionContent'>{{ t.transactionDate }} - {{ t.transactionName }}</p>
+        </mat-card-content>
     </mat-card>
     </div>
 </div>

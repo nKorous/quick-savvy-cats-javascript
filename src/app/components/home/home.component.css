@@ -1,8 +1,11 @@
 .mainHome {
-    text-align: center;
     height: 87%;
     width: 98%;
     padding: 1%;
+}
+
+.userInfo {
+    text-align: center;
 }
 
 .userImg {
@@ -54,4 +57,8 @@
 .credit {
     color: green;
     font-weight: bold;
+}
+
+.transactionContent {
+    margin-left: 5%;
 }

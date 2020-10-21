@@ -16,56 +16,56 @@
                     <tbody>
                         <tr>
                             <td class='valueName'>First: </td>
-                            <td colspan='2' *ngIf='!editFirstName'>{{ newFirst ? newFirst : loggedInUser?.name.first}}</td>
-                            <td colspan='2' *ngIf='editFirstName'><input #newFirstNameInput (keyup)='setFirstName(newFirstNameInput.value)' class='longInput' matInput type='text' placeholder='Ash' (keyup)='setFirstName(newFirstNameInput.value)'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editFirstName'>{{ newFirst ? newFirst : loggedInUser?.name.first}}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editFirstName'><input #newFirstNameInput (keyup)='setFirstName(newFirstNameInput.value)' class='longInput' matInput type='text' placeholder='Ash' (keyup)='setFirstName(newFirstNameInput.value)'></td>
                             <td><button class='editButton' mat-icon-button (click)='editFirstNameToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Last: </td>
-                            <td colspan='2' *ngIf='!editLastName'>{{ newLast ? newLast : loggedInUser?.name.last }}</td>
-                            <td colspan='2' *ngIf='editLastName'><input #newLastNameInput (keyup)='setLastName(newLastNameInput.value)' class='longInput' matInput type='text' placeholder='Ketcham' (keyup)='setLastName(newLastNameInput.value)'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editLastName'>{{ newLast ? newLast : loggedInUser?.name.last }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editLastName'><input #newLastNameInput (keyup)='setLastName(newLastNameInput.value)' class='longInput' matInput type='text' placeholder='Ketcham' (keyup)='setLastName(newLastNameInput.value)'></td>
                             <td><button class='editButton' mat-icon-button (click)='editLastNameToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Company: </td>
-                            <td colspan='2' *ngIf='!editCompany'>{{ newCompany ? newCompany : loggedInUser?.company }}</td>
-                            <td colspan='2' *ngIf='editCompany'><input #newCompanyInput (keyup)='setCompanyName(newCompanyInput.value)' class='longInput' matInput type='text' placeholder='Deathstar Inc.' (keyup)='setCompanyName(newCompanyInput.value)'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editCompany'>{{ newCompany ? newCompany : loggedInUser?.company }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editCompany'><input #newCompanyInput (keyup)='setCompanyName(newCompanyInput.value)' class='longInput' matInput type='text' placeholder='Deathstar Inc.' (keyup)='setCompanyName(newCompanyInput.value)'></td>
                             <td><button class='editButton' mat-icon-button (click)='companyEditToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Email:</td>
-                            <td colspan='2' *ngIf='!editEmail'>{{ newEmail ? newEmail : loggedInUser?.email }}</td>
-                            <td colspan='2' *ngIf='editEmail'><input #emailInput (keyup)='setEmail(emailInput.value)' class='longInput' matInput type='email' placeholder='vader@deathstar.org.com.edu'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editEmail'>{{ newEmail ? newEmail : loggedInUser?.email }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editEmail'><input #emailInput (keyup)='setEmail(emailInput.value)' class='longInput' matInput type='email' placeholder='vader@deathstar.org.com.edu'></td>
                             <td><button class='editButton' mat-icon-button (click)='editEmailToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Phone:</td>
-                            <td colspan='2' *ngIf='!editPhone'>{{ newPhone ? newPhone : loggedInUser?.phone }}</td>
-                            <td colspan='2' *ngIf='editPhone'><input #phoneInput (keyup)='setPhone(phoneInput.value)' class='longInput' matInput type='tel'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editPhone'>{{ newPhone ? newPhone : loggedInUser?.phone }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editPhone'><input #phoneInput (keyup)='setPhone(phoneInput.value)' class='longInput' matInput type='tel' placeholder='+1 212 555 2368'></td>
                             <td><button class='editButton' mat-icon-button (click)='editPhoneToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Address:</td>
-                            <td colspan='2' *ngIf='!editAddress'>{{ newAddress ? newAddress : loggedInUser?.address }}</td>
-                            <td colspan='2' *ngIf='editAddress'><input #addressInput (keyup)='setAddress(addressInput.value)' class='longInput' matInput type='text' placeholder='123 4th street'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editAddress'>{{ newAddress ? newAddress : loggedInUser?.address }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editAddress'><input #addressInput (keyup)='setAddress(addressInput.value)' class='longInput' matInput type='text' placeholder='123 4th street'></td>
                             <td><button class='editButton' mat-icon-button (click)='editAddressToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Age:</td>
-                            <td colspan='2' *ngIf='!editAge'>{{ newAge ? newAge : loggedInUser?.age }}</td>
-                            <td colspan='2' *ngIf='editAge'><input #ageInput matInput (keyup)='setAge(ageInput.value)' class='longInput' type='number' placeholder='42'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editAge'>{{ newAge ? newAge : loggedInUser?.age }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editAge'><input #ageInput matInput (keyup)='setAge(ageInput.value)' class='longInput' type='number' placeholder='42'></td>
                             <td><button class='editButton' mat-icon-button (click)='editAgeToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Eye Color:</td>
-                            <td colspan='2' *ngIf='!editEyeColor'>{{ newEyeColor ? newEyeColor : loggedInUser?.eyeColor }}</td>
-                            <td colspan='2' *ngIf='editEyeColor'><input #eyeColorInput (keyup)='setEyeColor(eyeColorInput.value)' class='longInput' matInput type='text' placeholder='Gray'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editEyeColor'>{{ newEyeColor ? newEyeColor : loggedInUser?.eyeColor }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editEyeColor'><input #eyeColorInput (keyup)='setEyeColor(eyeColorInput.value)' class='longInput' matInput type='text' placeholder='Gray'></td>
                             <td><button class='editButton' mat-icon-button (click)='editEyeColorToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                         <tr>
                             <td class='valueName'>Picture URL:</td>
-                            <td colspan='2' *ngIf='!editPictureURL'>{{ newPictureURL ? newPictureURL : loggedInUser?.picture }}</td>
-                            <td colspan='2' *ngIf='editPictureURL'><input #picURLInput (keyup)='setPicURL(picURLInput.value)' class='longInput' matInput type='url' placeholder='Input URL and Keep it appropriate...'></td>
+                            <td colspan='2' class='contentTD' *ngIf='!editPictureURL'>{{ newPictureURL ? newPictureURL : loggedInUser?.picture }}</td>
+                            <td colspan='2' class='contentTD' *ngIf='editPictureURL'><input #picURLInput (keyup)='setPicURL(picURLInput.value)' class='longInput' matInput type='url' placeholder='Input URL and Keep it appropriate...'></td>
                             <td><button class='editButton' mat-icon-button (click)='editPictureToggle()'><mat-icon>create</mat-icon></button></td>
                         </tr>
                     </tbody>

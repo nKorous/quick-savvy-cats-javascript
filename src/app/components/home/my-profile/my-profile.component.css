@@ -6,6 +6,7 @@
 .profileCard {
     margin-top: 2%;
     margin: 1%;
+    width: 45%;
 }
 
 .profileTable {
@@ -18,13 +19,10 @@ table thead tr th {
 
 table tbody tr td {
     border-bottom: 1px dotted lightslategray;
-    max-width: 500px;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .longInput {
-    width: 80%;
+    width: 97%;
 }
 
 .valueName {
@@ -34,4 +32,10 @@ table tbody tr td {
 .saveButton {
     background-color: green;
     color: white;
+}
+
+.contentTD {
+    width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
