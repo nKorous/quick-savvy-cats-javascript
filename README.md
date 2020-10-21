@@ -1,11 +1,17 @@
 # Running the Code Challenge
 
-## Instructions for running
+## Instructions for running (long way)
 1. `npm install` - install packages
 1. `ng build --prod` - get a prod build into the `dist` folder
 1. `npm run startDev` - starts the backend server and frontend server
    + this starts things with nodemon so that the database will keep up with changes
 1. navigate to [http://localhost:5200/](http://localhost:5200/) to see the app
+1. enjoy
+
+## Instructions for running (short way)
+1. `npm run doItAll` this will install, build, and run the frontend and backend servers
+1. navigate to [http://localhost:5200/](http://localhost:5200/) to see the app
+1. enjoy
 
 ## Disclaimers
 

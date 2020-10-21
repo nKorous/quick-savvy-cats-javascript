@@ -6,6 +6,7 @@
     "build": "ng build",
     "start": "node api/server.js",
     "startDev": "nodemon api/server.js",
+    "doItAll": "npm install && ng build --prod && nodemon api/server.js",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

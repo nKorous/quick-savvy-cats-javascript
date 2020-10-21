@@ -251,16 +251,16 @@
       "isActive": true,
       "balance": "$3000.00",
       "picture": "https://cdn.bulbagarden.net/upload/b/b8/025Pikachu_LG.png",
-      "age": "22",
-      "eyeColor": "Blue",
+      "age": "32",
+      "eyeColor": "Light Purple",
       "name": {
-        "first": "Test",
+        "first": "Tester",
         "last": "McTestington"
       },
       "company": "Some other company",
       "email": "newTest@test.org",
       "password": "test123",
-      "phone": "1 222 333 4444",
+      "phone": "+1 842 368 9425",
       "address": "123 4th ST Quahog RI 98765",
       "transactions": [
         {
