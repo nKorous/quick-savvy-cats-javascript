@@ -12,6 +12,8 @@ export class MainbarComponent implements OnInit {
   userIsLoggedIn: boolean = false;
   loggedInUser: User;
 
+  today: Date = new Date()
+
   constructor(private userService: UserService,
     private router: Router) {}
 

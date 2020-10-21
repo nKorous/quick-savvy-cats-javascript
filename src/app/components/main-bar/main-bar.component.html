@@ -1,3 +1,7 @@
 <mat-toolbar color='primary' *ngIf='userIsLoggedIn'>
     <button mat-raised-button color='primary' (click)='logOut()'><mat-icon>time_to_leave</mat-icon> Logout</button>
+    
+    <!-- right side of the bar -->
+    <span style='flex: 1 1'></span>
+    {{ today | date: 'fullDate' }}
 </mat-toolbar>

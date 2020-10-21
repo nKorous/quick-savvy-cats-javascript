@@ -18,6 +18,8 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatDividerModule } from '@angular/material/divider'
 import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar'
+import { MatDialogModule } from '@angular/material/dialog';
+import { BalanceDialogComponent } from './components/home/balance-dialog/balance-dialog.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     LoginComponent,
     HomeComponent,
     EditUserComponent,
-    MainbarComponent
+    MainbarComponent,
+    BalanceDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -40,6 +43,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar'
     MatIconModule,
     MatDividerModule,
     MatSnackBarModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

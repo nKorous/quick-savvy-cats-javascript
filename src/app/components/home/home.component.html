@@ -1,1 +1,15 @@
-<h1>Welcome, {{ loggedInUser?.name.first }} {{ loggedInUser?.name.last }}</h1>
+<div class='mainHome'>
+    <div class='userInfo'>
+        <img [src]='loggedInUser?.picture' class='userImg'>
+        <h2>Welcome {{ loggedInUser?.name.last }}, {{ loggedInUser?.name.first }}</h2>
+    </div>
+    <div class='actionTray'>
+        <button class='appButton' id='balanceButton' mat-raised-button (click)='openBalance()'>Balance</button>
+        <button class='appButton' id='payButton' mat-raised-button color='primary'>Pay</button>
+        <button class='appButton' id='profileButton' mat-raised-button color='warn'>Edit Profile</button>
+    </div>
+    <mat-divider></mat-divider>
+    <div class='transactions'>
+        <h3>Transactions</h3>
+    </div>
+</div>
