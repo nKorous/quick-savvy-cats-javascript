@@ -12,6 +12,8 @@ export class MyProfileComponent implements OnInit {
   loggedInUser: User;
 
   editPictureURL: boolean = false
+  editFirstName: boolean = false
+  editLastName: boolean = false
   editAge: boolean = false;
   editEyeColor: boolean = false;
   editName: boolean = false;
@@ -20,8 +22,8 @@ export class MyProfileComponent implements OnInit {
   editPhone: boolean = false;
   editAddress: boolean = false;
 
-  newName: {first: string, last: string}
-
+  newFirst: string;
+  newLast: string;
   newPictureURL: string;
   newAge: number;
   newEyeColor: string;
@@ -41,6 +43,22 @@ export class MyProfileComponent implements OnInit {
     this.userService.loggedInUser.subscribe((user) => {
       this.loggedInUser = user;
     });
+  }
+
+  editFirstNameToggle() {
+    this.editFirstName = !this.editFirstName
+  }
+
+  setFirstName(name: string) {
+    this.newFirst = name
+  }
+
+  editLastNameToggle() {
+    this.editLastName = !this.editLastName
+  }
+
+  setLastName(name: string) {
+    this.newLast = name
   }
 
   companyEditToggle() {
@@ -111,6 +129,10 @@ export class MyProfileComponent implements OnInit {
 
     this.loggedInUser = {
       ...this.loggedInUser,
+      name: { 
+        first: this.newFirst || this.loggedInUser.name.first,
+        last: this.newLast || this.loggedInUser.name.last
+      },
       company: this.newCompany || this.loggedInUser.company,
       email: this.newEmail || this.loggedInUser.email,
       phone: this.newPhone || this.loggedInUser.phone,
