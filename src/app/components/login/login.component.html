@@ -2,8 +2,8 @@
     <mat-card class='loginCard'>
         <img src='assets/logo.png' class='logo'>
         <mat-card-content>
-            <p><mat-label>Username: </mat-label><input #usernameInput matInput type='text' value='test.tester@testnet.net'></p>
-            <p><mat-label>Password: </mat-label><input #passwordInput matInput type='password' value='test123' (keyup.enter)='login(usernameInput.value, passwordInput.value)'></p>
+            <p><mat-label>Username: </mat-label><input #usernameInput matInput type='text'></p>
+            <p><mat-label>Password: </mat-label><input #passwordInput matInput type='password' (keyup.enter)='login(usernameInput.value, passwordInput.value)'></p>
         </mat-card-content>
         <mat-card-footer>
             <mat-card-actions>

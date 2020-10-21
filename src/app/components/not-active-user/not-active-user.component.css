@@ -1,0 +1,23 @@
+.notActiveMain {
+    display:flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+}
+
+.notActiveCard {
+    height: 70%;
+    width: 60%;
+    margin-top: 75px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.sorryMsg {
+    font-size: 16px;
+}
+
+#notActiveButton {
+    width: 200px;
+}

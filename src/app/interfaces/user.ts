@@ -2,7 +2,7 @@ export interface User {
     _id: string
     guid: string;
     isActive: boolean;
-    balance: number;
+    balance: string;
     picture: string;
     age: number;
     eyeColor: string;

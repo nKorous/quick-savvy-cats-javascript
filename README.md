@@ -19,6 +19,11 @@ I don't advocate for sending usernames/passwords in clear text in the URL AT ALL
 
 ## Things I need to improve on
 1. Testing... Unit testing especially...
+1. Testing... Especially all kinds of testing
+1. Breaking out of my comfort zone
+1. Keeping it SIMPLE
+
+
 
 # Simple Developer Exercise 
 
