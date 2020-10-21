@@ -15,7 +15,10 @@ I don't advocate for sending usernames/passwords in clear text in the URL AT ALL
 
 1. lowdb is pretty awesome, I've heard of json databases before but I have never used one before. I'll be using this on other projects to quickly prototype database stuff for sure
 1. When I first sat down with paper to figure out how I wanted to tackle this project I quickly realized that I let my imagionation run away and needed to scale it back because of one word in the title of the exercise. Simple.. I guess sometimes I get carried away on what could be instead of what the requirements are, even on a quick project
-1. I have a "style". I wrote this app in a VERY similar style to several other apps I've written in the last couple months in my own time. I found myself going back to code I had recently written to look things up. While it's good to have a style and something to go back on, I realized that maybe I need to branch out a little bit and put a little more "hot sauce" in my arsenal and spice things up a bit. 
+1. I have a "style". I wrote this app in a VERY similar style to several other apps I've written in the last couple months in my own time. I found myself going back to code I had recently written to look things up. While it's good to have a style and something to go back on, I realized that maybe I need to branch out a little bit and put a little more "hot sauce" in my arsenal and spice things up a bit.
+
+## Things I need to improve on
+1. Testing... Unit testing especially...
 
 # Simple Developer Exercise 
 
