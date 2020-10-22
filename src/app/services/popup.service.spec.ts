@@ -1,4 +1,5 @@
 import { TestBed } from '@angular/core/testing';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { PopupService } from './popup.service';
 
@@ -6,7 +7,11 @@ describe('PopupService', () => {
   let service: PopupService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [
+        MatSnackBarModule
+      ]
+    });
     service = TestBed.inject(PopupService);
   });
 
