@@ -3,7 +3,6 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
 import { PopupService } from '../services/popup.service'
-import { map } from 'rxjs/operators';
 
 import { User } from '../interfaces/user'
 
